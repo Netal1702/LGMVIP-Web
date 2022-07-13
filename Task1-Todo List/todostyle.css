@@ -1,0 +1,116 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #7483f1, #88ef7b);
+}
+
+h1{
+    margin-top: 80px;
+    font-size: 3rem;
+    color: rgb(56, 56, 55);
+}
+
+.container{
+    position: absolute;
+    border: 2px solid white;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 450px;
+    padding: 30px 40px;
+}
+
+#newtask{
+    position: relative;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#newtask input{
+    width: 70%;
+    height: 45px;
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 15px;
+    border: 2px solid rgb(246, 159, 246);
+    border-radius: 5px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+}
+
+#newtask input:focus{
+    border-color: #88ef7b;
+    outline: none;
+}
+
+#newtask button{
+    cursor: pointer;
+    float: right;
+    position: relative;
+    height: 45px;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(93, 174, 241);
+    color: #fff;
+}
+
+#newtask button:hover{
+    opacity: 0.8;
+}
+
+#tasks{
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+}
+
+.task{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 2px;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+
+.task span{
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.task button{
+    border: none;
+    background-color: rgb(93, 174, 241);
+    color: #fff;
+    height: 100%;
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task button:hover{
+    opacity: 0.8;
+}
